@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "shadecn": "npx shadcn@latest add",
     "lint": "eslint"
   },
   "dependencies": {
