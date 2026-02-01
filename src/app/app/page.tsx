@@ -1,4 +1,4 @@
-import App from "@/components/root/app";
+import App from "@/components/root/App"; 
 
 export default function page() {
   return (
