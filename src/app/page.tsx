@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div>
       Make Readme
-      <Button>Click me</Button>
+      <Button>Click   me</Button>
     </div>
   )
 }
