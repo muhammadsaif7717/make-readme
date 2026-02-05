@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 GitReadMe Maker: The Ultimate Documentation
 
-## Getting Started
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0070f3&height=200&section=header&text=GitReadMe%20Maker&fontSize=70" width="100%" />
+</p>
 
-First, run the development server:
+## 📝 Description
+This is a **Next.js** powered application designed to bridge the gap between developers and professional documentation. Whether it's a profile or a project, we've got you covered.
+
+---
+
+## 📋 Table of Contents
+* [Features](#-features)
+* [Tech Stack](#-tech-stack)
+* [Installation](#-installation)
+* [Development Roadmap](#-development-roadmap)
+* [FAQ](#-faq)
+
+---
+
+## ✨ Features
+- [x] **Live Preview:** Real-time Markdown rendering.
+- [x] **Next-Themes:** Support for Dark and Light mode.
+- [x] **One-Click Export:** Download as a `.md` file.
+- [ ] **AI Integration:** Generate README descriptions using LLMs (Coming Soon).
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | Next.js 15 | Core Framework |
+| **Styling** | Tailwind CSS | Utility-first UI |
+| **Icons** | Simple Icons | Brand & Tech Logos |
+| **Parsing** | Marked.js | Markdown to HTML |
+
+---
+
+## 🖼️ Media Gallery
+
+### Application Preview
+<p align="center">
+  <img src="https://via.placeholder.com/600x300/0070f3/FFFFFF?text=Insert+Your+App+GIF+Here" alt="App Demo GIF" />
+  <br>
+  <sub><i>Figure 1: The split-pane editor in action.</i></sub>
+</p>
+
+---
+
+## 🚀 Installation
+
+To get started with the source code, run the following commands:
 
 ```bash
+# Clone the repository
+git clone [https://github.com/yourusername/readme-maker.git](https://github.com/yourusername/readme-maker.git)
+
+# Navigate into the directory
+cd readme-maker
+
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
