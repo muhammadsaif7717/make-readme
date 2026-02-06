@@ -53,7 +53,7 @@ export default function RootLayout({
               <Navbar />
 
               {/* Main App Layout - Sidebar + Content */}
-              <div className="flex h-[calc(100vh-64px)] w-full overflow-hidden">
+              <div className="flex w-full overflow-hidden">
                 {/* Sidebar - Hidden on mobile by default, toggleable */}
                 <AppSidebar />
 
