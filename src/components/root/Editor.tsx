@@ -13,7 +13,7 @@ export default function Editor() {
   const { blocks, updateBlock, removeBlock } = useReadme();
 
   return (
-    <div className="h-full w-full overflow-y-auto">
+    <div className="min-h-screen w-full overflow-y-auto">
       <div className="mx-auto max-w-5xl p-4 sm:p-6 md:p-8 lg:p-10">
         {/* Header */}
         <div className="mb-6 flex flex-col gap-4 border-b pb-4 sm:mb-8 sm:flex-row sm:items-center sm:justify-between">
