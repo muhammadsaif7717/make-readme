@@ -6,9 +6,10 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarHeader,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
+import { useSidebar } from '@/components/ui/sidebar';
+
 import {
   Heading1,
   Heading2,
@@ -66,6 +67,7 @@ import { useState } from 'react';
 
 export function AppSidebar() {
   const { addBlock, blocks } = useReadme();
+  const { setOpen, open, isMobile } = useSidebar();
   const [searchQuery, setSearchQuery] = useState('');
 
   // এলিমেন্টগুলোকে ক্যাটাগরি অনুযায়ী সাজানো হয়েছে
@@ -663,6 +665,18 @@ export function AppSidebar() {
     },
   ];
 
+  // Handle button click and close sidebar (especially on mobile)
+  const handleBlockAdd = (type: string) => {
+    addBlock(type);
+
+    // Close sidebar on mobile with a small delay
+    if (isMobile) {
+      setTimeout(() => {
+        setOpen(false);
+      }, 150); // 150ms delay (adjust as needed)
+    }
+  };
+
   // Filter elements based on search
   const filteredElements = elements
     .map((section) => ({
@@ -745,7 +759,7 @@ export function AppSidebar() {
                                                 ? 'hover:from-violet-50 hover:to-violet-50/50 dark:hover:from-violet-950/30 dark:hover:to-violet-950/20'
                                                 : 'hover:from-slate-50 hover:to-slate-50/50 dark:hover:from-slate-950/30 dark:hover:to-slate-950/20'
                         } group rounded-lg border border-transparent transition-all duration-200 hover:shadow-sm`}
-                        onClick={() => addBlock(item.type)}
+                        onClick={() => handleBlockAdd(item.type)}
                       >
                         <span
                           className={`${section.color} p-1.5 transition-transform group-hover:scale-110 ${section.bgColor} rounded-md`}
