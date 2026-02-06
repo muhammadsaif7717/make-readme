@@ -5,20 +5,23 @@
 </p>
 
 ## 📝 Description
+
 This is a **Next.js** powered application designed to bridge the gap between developers and professional documentation. Whether it's a profile or a project, we've got you covered.
 
 ---
 
 ## 📋 Table of Contents
-* [Features](#-features)
-* [Tech Stack](#-tech-stack)
-* [Installation](#-installation)
-* [Development Roadmap](#-development-roadmap)
-* [FAQ](#-faq)
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Development Roadmap](#-development-roadmap)
+- [FAQ](#-faq)
 
 ---
 
 ## ✨ Features
+
 - [x] **Live Preview:** Real-time Markdown rendering.
 - [x] **Next-Themes:** Support for Dark and Light mode.
 - [x] **One-Click Export:** Download as a `.md` file.
@@ -28,18 +31,19 @@ This is a **Next.js** powered application designed to bridge the gap between dev
 
 ## 🛠 Tech Stack
 
-| Category | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Frontend** | Next.js 15 | Core Framework |
-| **Styling** | Tailwind CSS | Utility-first UI |
-| **Icons** | Simple Icons | Brand & Tech Logos |
-| **Parsing** | Marked.js | Markdown to HTML |
+| Category     | Technology   | Purpose            |
+| :----------- | :----------- | :----------------- |
+| **Frontend** | Next.js 15   | Core Framework     |
+| **Styling**  | Tailwind CSS | Utility-first UI   |
+| **Icons**    | Simple Icons | Brand & Tech Logos |
+| **Parsing**  | Marked.js    | Markdown to HTML   |
 
 ---
 
 ## 🖼️ Media Gallery
 
 ### Application Preview
+
 <p align="center">
   <img src="https://via.placeholder.com/600x300/0070f3/FFFFFF?text=Insert+Your+App+GIF+Here" alt="App Demo GIF" />
   <br>
@@ -64,3 +68,4 @@ npm install
 
 # Start the dev server
 npm run dev
+```
