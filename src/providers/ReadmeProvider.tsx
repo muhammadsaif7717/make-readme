@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from 'react';
 
 // টাইপ ডিফাইন করা
 export type ReadmeBlock = {
@@ -13,7 +13,7 @@ interface ReadmeContextType {
   blocks: ReadmeBlock[];
   addBlock: (type: string) => void;
   updateBlock: (id: string, content: string) => void;
-  removeBlock:(id: string) => void
+  removeBlock: (id: string) => void;
 }
 
 const ReadmeContext = createContext<ReadmeContextType | undefined>(undefined);
@@ -25,7 +25,7 @@ export function ReadmeProvider({ children }: { children: React.ReactNode }) {
     const newBlock = {
       id: Math.random().toString(36).substring(2, 9),
       type,
-      content: "",
+      content: '',
     };
     setBlocks((prev) => [...prev, newBlock]);
   };
@@ -37,12 +37,13 @@ export function ReadmeProvider({ children }: { children: React.ReactNode }) {
   };
 
   const removeBlock = (id: string) => {
-  setBlocks((prev) => prev.filter((block) => block.id !== id));
-};
-
+    setBlocks((prev) => prev.filter((block) => block.id !== id));
+  };
 
   return (
-    <ReadmeContext.Provider value={{ blocks, addBlock, updateBlock, removeBlock }}>
+    <ReadmeContext.Provider
+      value={{ blocks, addBlock, updateBlock, removeBlock }}
+    >
       {children}
     </ReadmeContext.Provider>
   );
@@ -51,6 +52,7 @@ export function ReadmeProvider({ children }: { children: React.ReactNode }) {
 // এটি ব্যবহারের জন্য একটি কাস্টম হুক
 export const useReadme = () => {
   const context = useContext(ReadmeContext);
-  if (!context) throw new Error("useReadme must be used within a ReadmeProvider");
+  if (!context)
+    throw new Error('useReadme must be used within a ReadmeProvider');
   return context;
 };
