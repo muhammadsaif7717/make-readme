@@ -349,12 +349,13 @@ export default function Preview() {
               <div className="flex min-h-[400px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 text-gray-500 dark:border-[#30363d] dark:bg-[#161b22] dark:text-gray-400">
                 <Eye size={48} className="mb-4 opacity-20" />
                 <p className="text-sm font-medium sm:text-base">
-                  এই README ফাইলটি এখনও খালি
+                  This README file is still empty
                 </p>
                 <p className="mt-1 text-xs opacity-70 sm:text-sm">
-                  সাইডবার থেকে এলিমেন্ট যোগ করুন
+                  Add elements from the sidebar
                 </p>
               </div>
+
             ) : (
               <Tabs value={viewMode} className="w-full">
                 {/* GitHub-Authentic Preview Mode */}
