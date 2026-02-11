@@ -22,7 +22,7 @@ export default function Editor() {
               README Editor
             </h1>
             <p className="text-muted-foreground mt-1 text-sm">
-              আপনার ব্লকের ডাটাগুলো এখানে এডিট করুন
+                Edit the data of your block here
             </p>
           </div>
           <div className="text-muted-foreground flex items-center gap-2 text-sm">
@@ -37,12 +37,13 @@ export default function Editor() {
           {blocks.length === 0 ? (
             <div className="bg-muted/20 rounded-xl border-2 border-dashed p-12 text-center sm:p-20">
               <div className="mx-auto max-w-md">
-                <p className="text-muted-foreground mb-2 text-base sm:text-lg">
-                  সাইডবার থেকে এলিমেন্ট যোগ করে শুরু করুন
-                </p>
-                <p className="text-muted-foreground/70 text-xs sm:text-sm">
-                  বাম পাশের মেনু থেকে যেকোনো এলিমেন্ট সিলেক্ট করুন
-                </p>
+               <p className="text-muted-foreground mb-2 text-base sm:text-lg">
+  Get started by adding elements from the sidebar
+</p>
+<p className="text-muted-foreground/70 text-xs sm:text-sm">
+  Select any element from the menu on the left
+</p>
+
               </div>
             </div>
           ) : (
